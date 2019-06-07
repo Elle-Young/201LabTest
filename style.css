@@ -1,0 +1,23 @@
+html {
+    height: 100%;
+    position: center
+}
+div {
+    text-align: center;
+   }
+body {
+     width: 800px;
+     height: 100%;
+     background-color: rgb(90, 130, 182);
+     margin-left: 90px
+  }
+h1{
+    display: inline;
+}
+img{
+    display: inline;
+    margin: 60px;
+}
+.textBlock{
+    text-align: center
+}

@@ -1,14 +1,5 @@
 'uses trict';
 
-// line 3-10 is an example from lecture.
-// if(family.length === 4 && family[2] === "Zach") {
-//     console.log('Get a second job');
-//   } else if ( family.length === 5 ) {
-//     console.log('Danger, Will Robinson!');
-//   }else {
-//     console.log("You're Good");
-//   }
-
 var userAnswer1 = prompt ('Do you want to play a game?').charAt(0).toLowerCase();
 function question1(userAnswer1){
   if(userAnswer1==='y'){
@@ -23,15 +14,6 @@ function question1(userAnswer1){
   }
 }
 
-var userAnswer2 = prompt ('Is the number 144 divisible by 3 without a remainder?').charAt(0).toLowerCase(); //yes 48
-function question2(userAnswer2){
-  if (userAnswer2==='y') {
-    alert('correct!');
-  } else (userAnswer2!=='y'); {
-    alert('try again!');
-  }
-}
-console.log (userAnswer2);
 
 var userAnswer3 = prompt ('Was I born in Washington State?').charAt(0).toLowerCase(); //y
 function question3(userAnswer3){
@@ -63,8 +45,25 @@ function question5(userAnswer5){
 }
 console.log (userAnswer5);
 
+var userTries = 4;
+
+var userAnswer6 = prompt ('What is the square root of 144?').charAt(0).toLowerCase(); //12
+function question6(userAnswer6){
+  while (userTries < 4 && userAnswer6 < 12) {
+    alert('sorry, too low. Try again');
+  }
+  if (userAnswer6 > 12) {
+    alert('sorry, too high');
+  }
+  if (userAnswer6 === 12); {
+    alert('Congrats, you win!');
+  }
+  userTries--;
+}
+console.log (userAnswer6);
+
 question1(userAnswer1);
-question2(userAnswer2);
 question3(userAnswer3);
 question4(userAnswer4);
 question5(userAnswer5);
+question6(userAnswer6);

@@ -1,13 +1,4 @@
-'uses trict';
-
-// line 3-10 is an example from lecture.
-// if(family.length === 4 && family[2] === "Zach") {
-//     console.log('Get a second job');
-//   } else if ( family.length === 5 ) {
-//     console.log('Danger, Will Robinson!');
-//   }else {
-//     console.log("You're Good");
-//   }
+'use strict';
 
 var userAnswer1 = prompt ('Do you want to play a game?').charAt(0).toLowerCase();
 function question1(userAnswer1){
